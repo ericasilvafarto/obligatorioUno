@@ -6,12 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "sass scss/estilos.scss css/estilos.min.css --style compressed",
-    "start": "sass --whtch scss/estilos.scss css/estilos.min.css"
+    "start": "sass --whtch scss/estilos.scss css/estilos.min.css",
+    "copy-html": "copyfiles -u 1 \"*.html\" dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "copyfile": "^0.1.2",
+    "copyfiles": "^2.4.1"
   }
 }
