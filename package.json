@@ -8,8 +8,7 @@
     "build": "npm run buildCss & npm run copy-html ",
     "buildCss": "sass scss/estilos.scss css/estilos.min.css --style compressed",
     "start": "sass --whtch scss/estilos.scss css/estilos.min.css",
-    "copy-html": "copyfiles \"*.html\" dist",
-
+    "copy-html": "copyfiles \"*.html\" dist"
   },
   "keywords": [],
   "author": "",
