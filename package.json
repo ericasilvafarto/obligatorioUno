@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass scss/estilos.scss css/estilos.min.css --style compressed",
+    "build": "npm run buildCss & npm run copy-html ",
+    "buildCss": "sass scss/estilos.scss css/estilos.min.css --style compressed",
     "start": "sass --whtch scss/estilos.scss css/estilos.min.css",
-    "copy-html": "copyfiles -u 1 \"*.html\" dist"
+    "copy-html": "copyfiles \"*.html\" dist",
+
   },
   "keywords": [],
   "author": "",
