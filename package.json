@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run buildCss && npm run copy-html && npm run copy-assets",
-    "buildCss": "sass scss/estilos.scss dist/css/estilos.min.css --style compressed",
+    "buildCss": "sass scss/estilos.scss dist/css/estilos.min.css --style compressed && npm run copy-style",
     "start": "sass --watch scss/estilos.scss dist/css/estilos.min.css",
     "copy-html": "copyfiles \"*.html\" dist",
     "copy-assets": "copyfiles \"assets/*\" dist/assets",
