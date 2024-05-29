@@ -1,4 +1,4 @@
-/* 
+
 #encabezado{
     background-color: rgb(27, 26, 26);
     background-size: cover;
@@ -28,9 +28,9 @@ nav a{
     margin-right: 0.4em;
 }
 #soy{
-    color:#96B096 ;
+    color:violet ;
     font-weight: bold;
-} */
+} 
 
 
 @mixin respond-to($media) {
