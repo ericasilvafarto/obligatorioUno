@@ -1,4 +1,5 @@
-$primary: aqua;
+// Variables
+$primary: violet;
 $font-family: Arial, sans-serif;
 $body-bg: #f4f4f4;
 $text-color: #333;
@@ -8,4 +9,31 @@ $nav-link-color: white;
 $nav-link-hover: darken($primary, 10%);
 $button-bg: $primary;
 $button-text: white;
-//mias
+
+// Estilos Generales
+body {
+    font-family: $font-family;
+    line-height: 1.6;
+    background-color: $body-bg;
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    transition: background-color 0.3s ease;
+    
+    &:hover {
+        background-color: $nav-link-hover;
+    }
+}
+
+a[download] {
+    background-color: $button-bg;
+    color: $button-text;
+    text-transform: uppercase;
+    text-align: center;
+}
