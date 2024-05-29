@@ -3,3 +3,93 @@
 @import "img";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+
+// Estilos Generales
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+// Encabezado
+#encabezado {
+    background: $primary;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 1em;
+        font-size: 1.2em;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+#soy {
+    padding: 2em 0;
+    
+    p {
+        font-size: 1.5em;
+        margin: 0.5em 0;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin: 0.5em 0;
+    }
+
+    #yo {
+        margin-top: 1em;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+}
+
+// Botones y Enlaces
+a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    transition: background-color 0.3s ease;
+    
+    &:hover {
+        background-color: darken($primary, 10%);
+    }
+}
+
+a[download] {
+    background-color: $primary;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    #soy {
+        padding: 1em;
+
+        p, h1 {
+            font-size: 1.2em;
+        }
+
+        #yo {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
