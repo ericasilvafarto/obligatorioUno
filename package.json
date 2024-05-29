@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run buildCss && npm run copy-html && npm run copy-assets",
+    "build": "npm run buildCss && npm run copy-html && npm run copy-assets && npm run copy-style",
     "buildCss": "sass scss/estilos.scss css/estilos.min.css --style compressed",
     "start": "sass --watch scss/estilos.scss css/estilos.min.css",
     "copy-html": "copyfiles \"*.html\" dist",
-    "copy-assets": "copyfiles \"assets/*.png\" dist"
+    "copy-assets": "copyfiles \"assets/*.png\" dist",
+    "copy-style": "copyfiles \"scss/*.scss\" dist"
   },
   "keywords": [],
   "author": "",
