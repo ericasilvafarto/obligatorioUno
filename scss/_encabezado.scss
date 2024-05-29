@@ -1,4 +1,4 @@
-
+/* 
 #encabezado{
     background-color: rgb(27, 26, 26);
     background-size: cover;
@@ -30,4 +30,116 @@ nav a{
 #soy{
     color:#96B096 ;
     font-weight: bold;
-}
+} */
+
+
+@mixin respond-to($media) {
+    @if $media == small {
+      @media (max-width: 600px) { @content; }
+    } @else if $media == medium {
+      @media (min-width: 601px) and (max-width: 1024px) { @content; }
+    } @else if $media == large {
+      @media (min-width: 1025px) { @content; }
+    }
+  }
+  
+  // Styles
+  #encabezado {
+    background-color: $background-color;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+  
+  #encabezado p {
+    color: $text-color;
+    font-size: $font-size-small;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  nav {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    
+    a {
+      color: $link-color;
+      font-weight: bold;
+      font-size: $font-size-medium;
+      margin: 0 0.4em;
+      text-decoration: none;
+  
+      &:hover {
+        color: darken($link-color, 10%);
+      }
+    }
+  }
+  
+  #soy {
+    color: $highlight-color;
+    font-weight: bold;
+  
+    p {
+      margin: 0.5em 0;
+    }
+  
+    h1 {
+      margin: 0.2em 0;
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  // Responsive Design
+  @include respond-to(small) {
+    nav {
+      a {
+        display: block;
+        margin: 0.5em 0;
+      }
+    }
+  
+    #soy {
+      padding: 1em;
+  
+      img {
+        width: 80%;
+      }
+    }
+  }
+  
+  @include respond-to(medium) {
+    nav {
+      a {
+        margin: 0.3em;
+      }
+    }
+  
+    #soy {
+      padding: 2em;
+  
+      img {
+        width: 60%;
+      }
+    }
+  }
+  
+  @include respond-to(large) {
+    nav {
+      a {
+        margin: 0.5em;
+      }
+    }
+  
+    #soy {
+      padding: 3em;
+  
+      img {
+        width: 40%;
+      }
+    }
+  }
