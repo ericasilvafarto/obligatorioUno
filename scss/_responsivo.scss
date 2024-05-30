@@ -1,3 +1,5 @@
+// Archivo: _responsivo.scss
+
 @mixin respond-to($media) {
   @if $media == small {
     @media (max-width: 768px) { @content; }
@@ -8,58 +10,87 @@
 
 // Responsive Design
 @include respond-to(small) {
-  #soy h1, #habilidades h2, #Ppersonales {
+ #habilidades h2, #Ppersonales {
     color: #739673;
     margin: 0.2em 0;
+  }
+  #soy h1{
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
   }
 
   #sobreMi, #herramientas {
     color: $font-color-default;
     text-align: center;
     display: inline-block;
-
-        
-
-#descripcion{
-  margin-left: 1em;
-  margin-right: 1em;
-  margin-bottom:3em ;
-}
-    p {
-      color: #c4c3c3;
-    }
-
-  
-
-    #intro, #herramientas {
-      font-size: 0.8em;
-      margin-top: 5em;
-    }
   }
 
+  #descripcion {
+    margin: 1em;
+  }
 
+  p {
+    color: #c4c3c3;
+  }
 
- #contactame, #habilidades {
-    margin-bottom:3em ;
-   }
-/*  #Ppersonales{
-    margin-top:2em ;
-  } */
+  #intro, #herramientas {
+    font-size: 0.8em;
+    margin-top: 5em;
+  }
+
+  #contactame, #habilidades {
+    margin-bottom: 3em;
+  }
+
   #habilidades, #Ppersonales {
     text-align: center;
-
   }
 
   #lista {
     color: #c4c3c3;
     font-size: 1.1em;
-    margin-bottom: .5em;
-    list-style: none; // Eliminar los puntos de los elementos li
-    padding: 0; // Eliminar el padding predeterminado
+    margin-bottom: 0.5em;
+    list-style: none;
+    padding: 0;
 
     li {
       margin-top: 0.3em;
-      text-align: center; // Centrar los elementos li
+      text-align: center;
+    }
+  }
+  
+  #sectionPersonales {
+    color: $font-color-default;
+    text-align: center;
+    display: inline-block;
+
+    h3 {
+      margin-top: 1em;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto; // Centrar las imágenes
+    }
+
+    a {
+      border-radius: 10px;
+      border: 1px solid $link-color;
+      display: inline-block;
+      padding: 0.5em 1em;
+      margin-top: 1em;
+      text-decoration: none;
+      color: $link-color;
+      transition: background-color 0.2s ease, color 0.1s ease;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: lighten($link-color, 10%);
+        color: #fff;
+      }
     }
   }
 }
