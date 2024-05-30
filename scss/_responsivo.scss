@@ -1,0 +1,58 @@
+@mixin respond-to($media) {
+  @if $media == small {
+    @media (max-width: 768px) { @content; }
+  } @else if $media == medium {
+    @media (min-width: 768px) { @content; }
+  }
+}
+
+// Responsive Design
+@include respond-to(small) {
+  #soy h1, #habilidades h2 {
+    color: #739673;
+    margin: 0.2em 0;
+  }
+
+  #sobreMi {
+    color: $font-color-default;
+    margin-top: 1em;
+    text-align: center;
+    display: inline-block;
+
+    p  {
+      color: #c4c3c3;
+    }
+
+    h2, h3 {
+      margin: 1em 0;
+    }
+
+    #intro {
+      font-size: 0.8em;
+    }
+
+    #herramientas {
+      margin: 3em 0 0.2em;
+      font-size: 0.8em;
+      margin-top: 2em; 
+      color: white;
+    }
+  }
+
+  #habilidades {
+    text-align: center;
+  }
+
+  #lista {
+    color: #c4c3c3;
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+    list-style: none; // Eliminar los puntos de los elementos li
+    padding: 0; // Eliminar el padding predeterminado
+
+    li {
+      margin-top: 0.3em;
+      text-align: center; // Centrar los elementos li
+    }
+  }
+}
