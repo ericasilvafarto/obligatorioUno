@@ -10,15 +10,23 @@
 
 // Responsive Design
 @include respond-to(small) {
+  #compu {
+    display: none;
+  }
+
   #habilidades h2, #Ppersonales {
     color: #739673;
     margin: 0.2em 0;
   }
 
+  #soy{
+    height: 50vh; 
+  }
   #soy h1 {
     margin-bottom: 0.1em;
     margin-top: 0.1em;
   }
+
 
   #sobreMi, #herramientas {
     color: $font-color-default;
@@ -59,7 +67,9 @@
       text-align: center;
     }
   }
-
+#sectionPersonalesCompu{
+  display: none;
+}
   #sectionPersonales {
     color: $font-color-default;
     text-align: center;
@@ -126,4 +136,152 @@
       }
     }
   }
+}
+
+
+
+
+
+
+
+@include respond-to(medium) {
+  #yo:hover {
+    transform: scale(1.5, 1.5);
+    z-index: 3;
+  } 
+
+  #sectionPersonales {
+    display: none;
+  }
+
+  #sectionProyectosSinTitulos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    background-color: transparent;
+    text-align: center;
+  }
+
+  #sectionProyectosSinTitulos article {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+  }
+
+  #sectionProyectosSinTitulos article img {
+    width: 100%;
+    height: 200px; /* Establecemos una altura fija */
+    object-fit: cover; /* Para que las imágenes se recorten y mantengan el mismo tamaño */
+  }
+
+  #sectionProyectosSinTitulos article a {
+    display: block;
+    text-align: center;
+  }
+
+  #soy {
+    margin-top: 0; /* Eliminamos el espacio superior */
+  }
+
+* {
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family;
+  text-decoration: none;
+}
+
+body {
+  color: $text-color;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#encabezado {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+nav {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+
+  a {
+    color: $link-color;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 0 0.4em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: $button-bg-color;
+      color: $button-hover-color;
+    }
+  }
+}
+
+.contenedor {
+  margin: 0 auto;
+}
+
+#soy {
+  color: $highlight-color;
+  font-weight: bold;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3em;
+
+  p, h1 {
+    margin: 0.1em 0;
+  }
+
+  h1 {
+    color: $highlight-color;
+    font-weight: bold;
+  }
+
+  a {
+    margin-top: 2em;
+  }
+}
+
+#yo {
+  margin-top: 1.3em;
+  width: 200px;
+  text-align: center;
+  border-radius: 3em 3em 0.2em 0.2em;
+  transition: 0.4s;
+}
+
+#yoo {
+  display: none;
+}
+
+#intro, #herramientas {
+  color: $button-hover-color;
+  margin: 3em 0 0.2em;
+  font-size: 0.8em;
+  margin-top: 2em;
+}
+
+#sobreMi a {
+  border-radius: 10px;
+  border: 1px solid $link-color;
+  display: inline-block;
+  padding: 0.7em 1em;
+  margin-right: 1.7em;
+  margin-top: 0.1em;
+}
 }
