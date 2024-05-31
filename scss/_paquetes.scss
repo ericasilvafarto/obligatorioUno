@@ -1,0 +1,74 @@
+
+*{
+    background-color: $font-color-default;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid $color-claro;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: $hover-border-color;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: $hover-border-color;
+}
+
+label {
+    font-size: 16px;
+}
+
+.checkbox-container {
+    margin-bottom: 20px;
+}
+
+.checkbox-container input {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: $hover-border-color;
+    color: $background-color; 
+    text-align: center; 
+    padding: 20px; 
+  }
+
+
+@media screen and (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        margin-bottom: 10px;
+    }
+    button[type="submit"] {
+        font-size: 14px;
+    }
+}
