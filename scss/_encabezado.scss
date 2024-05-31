@@ -44,14 +44,15 @@
   }
   
   #soy {
+    
     color: $highlight-color;
     font-weight: bold;
     text-align: center; 
     display: flex;
     flex-direction: column;
     align-items: center; 
-    justify-content: center; 
-    height: 100vh; 
+margin-top: 2em;
+    height: 50vh; 
   
     p, h1 {
       margin: 0.1em 0;
