@@ -161,7 +161,7 @@
     display: none;
   }
 
-  #sectionProyectosSinTitulos {
+  #sectionProyectosP {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -170,19 +170,19 @@
     text-align: center;
   }
 
-  #sectionProyectosSinTitulos article {
+  #sectionProyectosP article {
     width: calc(33.33% - 20px);
     margin-bottom: 20px;
   }
 
-  #sectionProyectosSinTitulos article img {
+  #sectionProyectosP article img {
     width: 100%;
     height: 300px; 
     margin: 0 0.1em 0 0.1em;
     object-fit: cover; 
   }
 
-  #sectionProyectosSinTitulos article a {
+  #sectionProyectosP article a {
     display: block;
     text-align: center;
   }
@@ -332,4 +332,7 @@ footer {
 p, ul, h3, h2{
   color:$color-claro;
 }
+
+
+
 }
