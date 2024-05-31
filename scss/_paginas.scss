@@ -1,0 +1,71 @@
+@include respond-to(small) {
+#sushi, #sinCulpa,#js{
+    display: none;
+
+    #Celular {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+    #Celular div{
+       max-width: 600px;
+    }
+    #Celular img {
+        
+        width: 100%; 
+        height: auto; 
+        object-fit: contain;
+        margin-bottom: 20px; 
+    }
+}
+}
+@include respond-to(medium) {
+    #Celular{
+        display: none;
+    }
+    }
+
+
+    #paginasWeb{
+    color:$color-claro ;
+}
+.tablas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tablas article {
+    flex: 1 1 30%; /* Ajusta el tamaño y permite que los artículos se reduzcan si es necesario */
+    max-width: 30%; /* Ajusta el ancho máximo */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+    margin: 1em; /* Añade espacio entre los artículos */
+    text-align: center; /* Centra el contenido del artículo */
+}
+
+.tablas img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho del artículo */
+    height: 150px; /* Altura fija para todos los artículos */
+    object-fit: cover; /* Cubre el contenedor manteniendo la relación de aspecto */
+}
+
+.tablas a {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 10px 20px;
+    background-color: $highlight-proyect;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.tablas a:hover {
+    background-color: $highlight-color;
+}
+footer {
+    background-color: $hover-border-color;
+    color: $background-color; 
+    text-align: center; 
+    padding: 20px; 
+    margin-bottom: 0;
+  }

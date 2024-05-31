@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finaliza tu pedido</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header class="contenedor">
+        <a href="index.html">
+            <img src="img/logo_negro.png" alt="logo del sushi bar">
+        </a>
+        <nav class="negro">
+            <a href="index.html">INICIO</a>
+            <a href="index.html">TABLAS</a>
+            <a href="pedidos.html" class="actual">HACÉ TU PEDIDO</a>
+        </nav>
+    </header>
+
+    <main class="gris">
+        <section id="pedido" class="contenedor">
+            <h2>FINALIZA TU PEDIDO</h2>
+
+            <form action="#" method="post">
+                <fieldset class="datos">
+                    <legend>Datos personales</legend>
+                    <div>
+                        <label for="nombre">Nombre completo (*):</label> <br>
+                        <input type="text" name="nombre" id="nombre" required>
+                    </div>
+                    <div>
+                        <label for="email">Email (*):</label> <br>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="pass">Contraseña (*):</label><br>
+                        <input type="password" name="pass" id="pass" required>
+                    </div>
+                </fieldset>
+
+                <fieldset class="pago">
+                    <legend>Información del pago</legend>
+
+                    <input type="radio" name="pago" id="efectivo" value="efectivo">
+                    <label for="efectivo">Efectivo</label> <br>
+
+                    <input type="radio" name="pago" id="tarjeta" value="tarjeta">
+                    <label for="tarjeta">Tarjeta</label> <br>
+
+                    <input type="radio" name="pago" id="tra" value="tra">
+                    <label for="tra">Transferencia bancaria</label> <br>
+
+                    <select name="tarjeta">
+                        <option value="VISA">Visa</option>
+                        <option value="MASTER">Master</option>
+                        <option value="OCA">Oca</option>
+                        <option value="OTRA">Otra</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="final">
+                    <legend>¿Algo más?</legend>
+                    <label for="msj">Mensaje:</label>
+                    <textarea name="msj" id="msj"></textarea>
+
+                    <div class="boton_flex">
+                        <div>
+                            <input type="checkbox" name="noticias" id="noticias">
+                            <label for="noticias">Deseo recibir noticias por mail</label>
+                        </div>
+                        <button type="submit">¡ENVIAR YA!</button>
+                    </div>
+                </fieldset>
+            </form>
+
+        </section>
+    </main>
+
+    <footer class="contenedor footer">
+        Una tabla de sushi es una exquisita presentación culinaria que combina arte y sabor en un plato.
+    </footer>
+</body>
+
+</html>

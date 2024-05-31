@@ -1,0 +1,1020 @@
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+
+
+* {
+
+  margin: 0em;
+  padding: 0em;
+  font-family: "Segoe UI";
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+  max-width: 1920px;
+  min-width: 900px;
+}
+
+#bodyIndex {
+  background-color: #8eb695;
+}
+
+#bodyCafeteria {
+  background-color: #fb9da7;
+}
+
+.encabezado {
+  height: 36em;
+  background-image: url(img/principal.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-color: #222222;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.2em;
+  margin-bottom: 8.5em;
+}
+
+.logo {
+  position: absolute;
+  width: 12%;
+  top: 1em;
+  left: 1em;
+}
+
+nav {
+  position: absolute;
+  top: 1.5em;
+  right: 5em;
+}
+
+nav a {
+  color: #8eb695;
+  font-weight: bold;
+  margin-left: 1em;
+  font-family: 'Trocchi', serif;
+  letter-spacing: 0.02em;
+  text-shadow: 0.02em 0 0 #fbdea2,
+    0em 0.02em #fbdea2,
+    -0.02em 0 0 #fbdea2,
+    0 -0.02em 0 #fbdea2;
+}
+
+nav a:hover {
+  color: #83AF8B;
+}
+
+nav a:not(:hover) {
+  transition: color 0.3s;
+}
+
+.actual {
+  color: #fb9da7;
+}
+
+.actual:hover {
+  color: #FA8995;
+}
+
+.iconos {
+  width: 5vh;
+}
+
+.contenedor {
+  width: 40%;
+  margin-left: calc(50% - 22.2em);
+  bottom: 3em;
+  position: relative;
+}
+
+.contenedor h1 {
+  font-family: 'Trocchi', serif;
+  font-size: 3em;
+  color: #fb9da7;
+  letter-spacing: 0.1em;
+  text-shadow: 0.02em 0 0 white,
+    0px 0.02em white,
+    -0.02em 0 0 white,
+    0 -0.02em 0 white;
+}
+
+.contenedor p {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
+  color: black;
+  margin-bottom: 1.2em;
+}
+
+
+#verTienda {
+  font-family: 'Trocchi', serif;
+  font-size: 0.9em;
+  padding: 0.8em 1em;
+  background: linear-gradient(45deg, #fb9da7, #fbdea2);
+  color: white;
+  border-radius: 0.2em;
+  border: none;
+}
+
+#verTienda:hover {
+  background: linear-gradient(45deg, #fbdea2, #fb9da7);
+  color: #755006;
+  transition: color 0.5s;
+}
+
+#verTienda:not(:hover),
+.botonAmarillo:not(:hover),
+.botonTortas:not(:hover),
+.botonVerde {
+  transition: color 0.5s;
+}
+
+
+#relative {
+  background-color: #8eb695;
+  position: relative;
+  bottom: 6em;
+  display: flex;
+  padding: 2em;
+  text-align: center;
+  width: 55%;
+  margin: 0 auto;
+}
+
+#relative article {
+  margin: -0.7em 2.5em 0 2.5em;
+
+}
+
+#relative #art1 img,
+#relative #art2 img,
+#relative #art3 img {
+  width: 8em;
+  border-radius: 10em;
+}
+
+#relative p {
+  font-size: 0.7em;
+}
+
+
+#catering {
+  min-width: 1250px;
+  background-color: #8eb695;
+  margin-top: -6em;
+  display: flex;
+  flex-direction: column;
+  height: 32em;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#catering p {
+  font-size: 0.9em;
+  margin: 0.5em 0.5em;
+  background-color: #8eb6958b;
+  width: 95%;
+}
+
+#catering h2 {
+  font-size: 1.9em;
+  margin-bottom: 0.5em;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  text-shadow: 0.02em 0 0 white,
+    0em 0.02em white,
+    -0.02em 0 0 white,
+    0 -0.02em 0 white;
+}
+
+#catering h3 {
+  font-size: 1.4em;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+#cateringOff {
+  background-image: url(img/cateringOff.jpg);
+  background-size: 100%;
+  background-position: right 0 bottom 70%;
+  width: 50%;
+  height: 16em;
+  margin-bottom: 0.1em;
+}
+
+#cateringOff article {
+  margin-top: 10em;
+  margin-left: 3em;
+}
+
+#dosContenedor {
+  width: 50%;
+  display: flex;
+}
+
+#macarons {
+  background-image: url(img/macarons.jpg);
+  background-size: 100%;
+  background-position: right 0 bottom 70%;
+  width: 50%;
+  height: 15.9em;
+}
+
+#macarons article {
+  margin-top: 6em;
+  text-align: center;
+}
+
+#vasitos p {
+  width: 35%;
+}
+
+
+#masaSablee {
+  background-image: url(img/masaSablee.jpg);
+  background-size: 100%;
+  background-position: right 0 bottom 45%;
+  width: 50%;
+  height: 15.9em;
+}
+
+#mesaDulce {
+  background-image: url(img/mesaDulce.jpg);
+  background-size: 100%;
+  width: 25%;
+  height: 32em;
+}
+
+#mesaDulce article {
+  text-align: center;
+  margin-top: 12em; 
+}
+
+#mesaDulce p,
+#macarons p {
+  width: 45%;
+  margin: auto;
+} 
+
+
+.botonVerde {
+  font-family: 'Trocchi', serif;
+  font-size: 0.9em;
+  padding: 0.8em 1em;
+  background: linear-gradient(45deg, #8eb695, #8eb695);
+  color: #203124;
+  border-radius: 0.2em;
+  border: none;
+  margin-top: 2em;
+  margin-top: 1em;
+  margin-bottom: 3.5em;
+}
+
+.botonVerde:hover {
+  background: linear-gradient(45deg, #9BBFA2, #83AF8C);
+  color: white;
+  transition: color 0.4s;
+}
+
+#vasitos {
+  background-image: url(img/vasitos.jpg);
+  background-size: 100%;
+  background-position: right 0 bottom 45%;
+  width: 25%;
+  height: 16em;
+}
+
+#vasitos article {
+  margin-top: 10em;
+  margin-left: 1.5em;
+}
+
+#macaronsDos {
+  background-image: url(img/macaronsDos.jpg);
+  background-size: 100%;
+  background-position: right 0 bottom 70%;
+  width: 25%;
+  height: 15.9em;
+}
+
+#sectionTortas {
+  width: 100%;
+  background-color: #fbdea2;
+  height: 40em;
+}
+
+#tortas {
+  background-color: #fbdea2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+
+}
+
+#tortas h1 {
+  width: 100%;
+  font-size: 3em;
+  text-align: center;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  margin: 0.5em 0 0.5em 0;
+}
+
+#tortas h2 {
+  margin: 0.1em 0 0.5em 0;
+}
+
+#articulos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+ 
+}
+#articulos p {
+  margin-bottom:1.5em;
+}
+
+#tortas article {
+  flex: 1;
+  margin: 0 1em;
+  position: relative;
+}
+
+
+#tortas #tortasArt1 img,
+#tortas #tortasArt2 img,
+#tortas #tortasArt3 img {
+  height: 13.5em;
+  width: 17em;
+  margin-bottom: 1em;
+}
+
+
+blockquote {
+  background-color: #fcccd4;
+  font-size: 0.8em;
+  width: 11em;
+  padding: 0.5em;
+  position: absolute;
+  top: 1em;
+  color: #755006;
+}
+
+.botonTortas {
+  font-family: 'Trocchi', serif;
+  font-size: 0.9em;
+  padding: 0.8em 1em;
+  background: linear-gradient(45deg, rgb(255, 195, 209), #fcccd4);
+  color: white;
+  border-radius: 0.2em;
+  border: none;
+  margin-top: 2em;
+  margin-bottom: 3.5em;
+}
+
+.botonTortas:hover {
+  background: linear-gradient(45deg, #fcccd4, rgb(255, 195, 209));
+  color: #755006;
+  transition: color 0.4s;
+}
+
+#form {
+  min-width: 1200px;
+  height: 20em;
+  background-color: #8eb695;
+  text-align: left;
+  position: relative;
+}
+
+#form h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  margin-left: 14%;
+  color: #304B35;
+  margin-top: 1em;
+}
+
+form {
+  width: 72%;
+  background-color: #8eb695;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+#separar {
+  width: 24%;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+#asunto {
+  height: 3em;
+  width: 100%;
+  border-bottom: none;
+}
+
+#em,
+#nomb {
+  width: 24%;
+}
+
+.juntos {
+  width: 30%;
+}
+
+#massAcepto {
+  width: 30%;
+}
+
+#mj {
+  width: 48%;
+}
+
+#mensaje {
+  height: 5em;
+  width: 100%;
+}
+
+#nombre,
+#email {
+  height: 3em;
+  width: 100%;
+}
+
+.input,
+select {
+  border-radius: 0em;
+  width: 100%;
+  margin-top: 0.3em;
+}
+
+
+#consulta {
+  width: 25%;
+  margin-left: 1.5em;
+}
+
+#button {
+  width: 15%;
+  margin-left: 1.5em;
+}
+
+#ji {
+  margin-left: 0;
+  margin-bottom: 0.5em;
+}
+
+
+#acepto {
+  margin-top: 2.5em;
+}
+
+.botonAmarillo {
+  font-family: 'Trocchi', serif;
+  font-size: 0.9em;
+  padding: 0.8em 1em;
+  background: linear-gradient(45deg, rgba(247, 220, 166, 0.852), #fbdea2);
+  color: white;
+  border-radius: 0.2em;
+  border: none;
+  margin-top: 2em;
+  margin-top: 1em;
+  margin-bottom: 3.5em;
+  width: 100%;
+  border-radius: 0em;
+}
+
+
+.botonAmarillo:hover {
+  background: linear-gradient(45deg, #fbdea2, rgba(247, 220, 166, 0.852));
+  color: #304B35;
+  transition: color 0.4s;
+}
+
+#chat {
+  position: absolute;
+  width: 17vh;
+  bottom: 0.1em;
+  right: 2em;
+  background-color: #fbdea2;
+  border-radius: 2.5em 2.5em 0 0;
+  padding: 1em;
+}
+
+footer {
+
+  background-color: #fb9da7;
+  color: #304B35;
+  height: 11em;
+  display: flex;
+  align-items: center;
+}
+footer p {
+  font-size: 0.85em;
+  margin-left: 20%;
+}
+
+
+#logoFooter {
+  width: 10em;
+  height: auto;
+  margin-right: auto;
+}
+
+.iconosFooter {
+  width: 5vh;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+
+}
+
+#iconosSeparar {
+  margin-left: 9em;
+}
+
+
+
+.segundoHeader {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.2em;
+  background-color: #fbdea2;
+  margin-bottom: 1.5em;
+}
+
+#cafe {
+  min-width: 1200px;
+  background-color: #fb9da7;
+  display: flex;
+  align-items: center;
+  height: 32em;
+}
+
+#cafeBoton {
+  margin-top: 3.8em;
+  border-radius: 0;
+  width: 20%;
+}
+
+#divCafe {
+  background-color: #fb9da7;
+  width: 75%;
+  height: 23.5em;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 0;
+}
+
+#cajaUno {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#cajaDos {
+  width: 97.5%;
+  padding: 0;
+  margin-left: 1em;
+  margin-top: 0.3em;
+}
+
+#cajaDos h1 {
+  margin-bottom: 0.5em;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  text-shadow: 0.02em 0 0 #fbdea2,
+    0em 0.02em #fbdea2,
+    -0.02em 0 0 #fbdea2,
+    0 -0.02em 0 #fbdea2;
+}
+
+#cafeUno {
+  background-image: url(img/cafeUno.jpg);
+  background-size: 100%;
+  background-position: center;
+  width: 100%;
+  height: 17em;
+}
+
+#cafesChicos {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5em;
+  width: 100%;
+}
+
+#cafeDos,
+#cafeTres,
+#cafeCuatro {
+  background-position: center;
+  background-size: 100%;
+  width: 32%;
+  height: 5.5em;
+}
+
+#cafeDos {
+  background-image: url(img/cafeDos.jpg);
+}
+
+#cafeTres {
+  background-image: url(img/cafeTres.jpg);
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#cafeCuatro {
+  background-image: url(img/cafeCuatro.jpg);
+}
+
+.ul h4 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+li {
+  font-size: 0.8em;
+  padding: 0.2em;
+}
+
+#table h4 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  text-align: left;
+  margin-left: 0.5em;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.8em;
+  margin-bottom: 5em;
+}
+
+tr {
+  border-bottom: 0.1em solid black;
+}
+
+th,
+td {
+  padding: 0.6em;
+}
+
+.lista {
+  margin-left: 3em;
+}
+
+.tabla-y-lista {
+  display: flex;
+}
+
+
+
+#nuevos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#articleNuevo {
+  width: 70%;
+  margin: 13em auto;
+}
+
+#articleNuevo h2 {
+  background-color: rgba(255, 255, 255, 0.555);
+  margin-bottom: 0.4em;
+  font-size: 2em;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  text-shadow: 0.02em 0 0 #fb9da7,
+    0em 0.02em #fb9da7,
+    -0.02em 0 0 #fb9da7,
+    0 -0.02em 0 #fb9da7;
+}
+
+#articleNuevo p {
+  transition: 0.4s;
+  background-color: #fb9da693;
+}
+
+#articleTeLoLLevamos {
+  width: 80%;
+  margin: 5em auto;
+  text-align: left;
+}
+
+#articleTeLoLLevamos h2 {
+  background-color: rgba(255, 255, 255, 0.555);
+  margin-bottom: 0.4em;
+  font-size: 2em;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  text-shadow: 0.02em 0 0 #8eb695,
+    0em 0.02em #8eb695,
+    -0.02em 0 0 #8eb695,
+    0 -0.02em 0 #8eb695;
+}
+
+#articleTeLoLLevamos p {
+  transition: 0.4s;
+  background-color: #8eb695a4;
+  margin-bottom: 3.5em;
+}
+
+
+.nuevosImg p:hover {
+  transform: scale(1.2, 1.2);
+  z-index: 3;
+}
+
+#articleTeLoLLevamos h4 {
+  background-color: rgba(255, 255, 255, 0.555);
+  text-shadow: 0.02em 0 0 #8eb695,
+    0em 0.02em #8eb695,
+    -0.02em 0 0 #8eb695,
+    0 -0.02em 0 #8eb695;
+}
+
+.nuevosImg {
+  width: 50%;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  height: 25em;
+}
+
+
+
+.nuevosImg:nth-child(1) {
+  background-image: url(img/001.jpg);
+}
+
+.nuevosImg:nth-child(2) {
+  background-image: url(img/002.jpg);
+}
+
+
+.nuevosImg:nth-child(3) {
+  background-image: url(img/004.jpg);
+}
+
+.nuevosImg:nth-child(4) {
+  background-image: url(img/003.jpg);
+}
+
+#nuevoBoton {
+  margin-top: 3em;
+  border-radius: 0;
+  width: 30%;
+}
+
+
+#hederError {
+  margin-bottom: 0;
+}
+
+#bodyError {
+  font-family: Arial, sans-serif;
+  background-color: #8eb695;
+  text-align: center;
+  overflow: hidden;
+}
+
+.error-container {
+  margin: 10% auto;
+  padding: 20px;
+  background-color: #ffefcc;
+  border: 1px solid #f9d835;
+  border-radius: 10px;
+  max-width: 400px;
+  height: 400px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+#bodyError h1 {
+  font-size: 4em;
+  color: #fb9da7;
+  margin-top: 0;
+}
+
+#bodyError p {
+  font-size: 1.2em;
+  margin: 1em 0 2em 0;
+}
+
+ #errorBoton {
+  text-decoration: none;
+  background-color: #8eb695;
+  color: #fff;
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  font-weight: bold;
+  margin-top: 4em;
+  transition: 0.2s;
+}
+
+ #errorBoton:hover {
+  background-color: #f2e2ce;
+  color: #8eb695;
+}
+
+.cookie-rain {
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  animation: fall 3s linear infinite;
+}
+
+.galletaUno,
+.galletaDos,
+.galletaCinco,
+.galletaSeis {
+  width: 2em;
+  height: 2em;
+  background-size: cover;
+  animation: spin 4s linear infinite;
+  animation-delay: var(--delay);
+  left: calc(10% * var(--position));
+}
+
+.galletaUno {
+  position: relative;
+  background-image: url('img/galletaUno.png');
+  top: calc(-10% * var(--position));
+}
+
+
+.galletaDos {
+  position: relative;
+  background-image: url('img/galletaDos.png');
+  top: calc(10% * var(--position));
+}
+
+.galletTres {
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  background-image: url('img/galletTres.png');
+  background-size: cover;
+  animation: spin 4s linear infinite;
+  animation-delay: var(--delay);
+  left: calc(10% * var(--position));
+  top: calc(5% * var(--position));
+
+}
+
+.galletaCuatro {
+  position: absolute;
+  width: 3em;
+  height: 2em;
+  background-image: url('img/GalletaCuatro.png');
+  background-size: cover;
+  animation: spin 4s linear infinite;
+  animation-delay: var(--delay);
+  left: calc(10% * var(--position));
+  top: calc(-4% * var(--position));
+}
+
+.galletaCinco {
+  position: absolute;
+  background-image: url('img/galletaCinco.png');
+  top: calc(-12% * var(--position));
+}
+
+.galletaSeis {
+  position: absolute;
+  background-image: url('img/galletaSeis.png');
+  top: calc(-20% * var(--position));
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110%);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.galletaUno:nth-child(1) {
+  --delay: 1s;
+  --position: 7;
+}
+
+
+.galletaUno:nth-child(2) {
+  --delay: 2s;
+  --position: 1;
+}
+
+.galletaUno:nth-child(3) {
+  --delay: 3s;
+  --position: 9;
+}
+
+.galletaUno:nth-child(4) {
+  --delay: 4s;
+  --position: 3;
+}
+
+.galletTres:nth-child(5) {
+  --delay: 4s;
+  --position: 4;
+}
+
+.galletaDos:nth-child(6) {
+  --delay: 4s;
+  --position: 5;
+}
+
+.galletTres:nth-child(7) {
+  --delay: 1s;
+  --position: 6;
+}
+
+.galletTres:nth-child(8) {
+  --delay: 4s;
+  --position: 0;
+}
+
+.galletaDos:nth-child(9) {
+  --delay: 4s;
+  --position: 8;
+}
+
+.galletaCuatro:nth-child(10) {
+  --delay: 4s;
+  --position: 2;
+}
+
+.galletaCuatro:nth-child(11) {
+  --delay: 4s;
+  --position: 8;
+}
+
+.galletaCuatro:nth-child(12) {
+  --delay: 6s;
+  --position: 5;
+}
+
+.galletaCinco:nth-child(13) {
+  --delay: 6s;
+  --position: 1;
+}
+
+.galletaCinco:nth-child(14) {
+  --delay: 6s;
+  --position: 7;
+}
+
+.galletaDos:nth-child(15) {
+  --delay: 4s;
+  --position: 9;
+}
+
+.galletaCinco:nth-child(16) {
+  --delay: 1s;
+  --position: 9;
+}
+
+.galletaDos:nth-child(17) {
+  --delay: 1s;
+  --position: 3;
+}
+
+.galletaCinco:nth-child(16) {
+  --delay: 1s;
+  --position: 9;
+}
+
+.galletaDos:nth-child(17) {
+  --delay: 1s;
+  --position: 3;
+}
+
+.galletaSeis:nth-child(18) {
+  --delay: 1s;
+  --position: 5;
+}
+
+.galletaSeis:nth-child(19) {
+  --delay: 1s;
+  --position: 3;
+}

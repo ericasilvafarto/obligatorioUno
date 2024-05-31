@@ -1,0 +1,156 @@
+
+/* Erica Silva (284183) */
+
+body{
+	font-family: arial; 
+}
+
+#hiddenTitle{
+	display: none; 
+}
+label
+
+.form-section{
+	width: 50%;
+	float: left;
+
+}
+
+#presentationSubtitle{
+	width: 50%;
+	float: left;
+}
+
+table, th, td{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.table-section{
+	overflow: scroll;
+	height: 190px;
+}
+
+table{
+	margin: 0 auto;
+}
+
+td{
+	text-align: center;
+}
+
+.day-row{
+	width: 250px;
+}
+
+.presentation-row{
+	width: 900px;
+}
+
+.subtitle{
+	text-align: center;
+	background-color: rgb(252, 197, 252);
+	border-radius: 25px;
+}
+
+#title{
+	text-align: center;
+background-color:bisque;
+	background-position: 0.4%;
+	border-radius: 25px;
+	color: #293251;
+}
+
+.origin-label{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#nationalOrigin{
+	margin-right: 100px;
+	margin-left: 100px;
+}
+
+#foreignOrigin{
+	margin-right: 100px;
+	margin-left: 100px;
+}
+
+button{
+	padding: 1px 75px;
+}
+
+footer{
+	text-align: center;
+	background-color: rgb(253, 192, 253);
+	border-radius: 25px;
+	color: #FFFFFF;
+}
+
+.text-box{
+	width: 280px;
+}
+
+.form-label{
+    display: inline-block;
+    clear: left;
+    width: 150px;
+    text-align: left;
+}
+
+.checkbox-label{
+	padding-right: 40px;
+}
+
+#idCheckBox{
+	width: 200px;
+}
+
+.table-day-one{
+	background-color: violet;
+}
+
+.table-day-two{
+	background-color: rgb(213, 117, 213);
+}
+
+.table-day-three{
+	background-color:  rgb(172, 95, 172);
+}
+
+.table-day-four{
+	background-color:  rgb(141, 68, 141);
+}
+
+.table-day-five{
+	background-color:  rgb(98, 41, 98);
+}
+
+@media print{
+
+	#title{
+		display: block;
+	}
+
+	details{
+		display: none;
+	}
+
+	.table-article{
+		display: block;
+	}
+
+	.table-section{
+		display: block;
+		height: auto;
+		overflow: hidden;
+	}
+
+	.form-article{
+		display: none;
+	}
+
+	footer{
+		display: none;
+	}
+}

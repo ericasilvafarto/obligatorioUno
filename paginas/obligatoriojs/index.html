@@ -1,0 +1,252 @@
+
+<!-- Erica Silva  -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Obligatorio</title> 
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<script type="text/javascript" src="JS/clases.js"></script>
+	<script type="text/javascript" src="JS/funciones.js"></script>
+</head>
+
+<body>
+	<header id="title">
+		 <h1>TechnoEvent</h1>
+		
+	</header> 
+
+	<details>
+		<summary>Información sobre este trabajo</summary>
+		<p>Página para un evento tecnológico.</p>
+		<p>Sistema creado por: Erica Silva.</p>
+		
+	</details>
+
+	<article class="table-article">
+		<h3 class="subtitle">Planificación</h3>
+		<section class="table-section">
+			<h6 id="hiddenTitle">Vacio</h6> <!--En CSS tiene 'display: none' para eliminar un warning al validar-->
+			<table>
+				<thead>
+					<tr>
+						<th class="day-row">Día y hora</th>
+						<th class="presentation-row">Presentación</th>
+					</tr>
+				</thead>
+				<tbody id="idTableBody">
+					<tr class="table-day-one">
+						<td>1 - 8:00</td>
+						<td rowspan="2">1era Presentación del día 1 de 30 minutos</td>
+					</tr>
+					<tr class="table-day-one">
+						<td>1 - 8:15</td>
+					</tr>
+					<tr class="table-day-one">
+						<td>1 - 8:30</td>
+						<td rowspan="3">2da Presentación del día 1 de 45 minutos</td>
+					</tr>
+					<tr class="table-day-one">
+						<td>1 - 8:45</td>
+					</tr>
+					<tr class="table-day-one">
+						<td>1 - 9:00</td>
+					</tr>
+					<tr class="table-day-one">
+						<td>1 - 9:15</td>
+						<td>3era Presentación del día 1 de 15 minutos</td>
+					</tr>
+					<tr class="table-day-two">
+						<td>2 - 8:00</td>
+						<td>1era Presentación del día 2 de 15 minutos</td>
+					</tr>
+					<tr class="table-day-two">
+						<td>2 - 8:15</td>
+						<td rowspan="2">2da Presentación del día 2 de 30 minutos</td>
+					</tr>
+					<tr class="table-day-two">
+						<td>2 - 8:30</td>
+					</tr>
+					<tr class="table-day-three">
+						<td>3 - 8:00</td>
+						<td rowspan="4">1era Presentación del día 3 de 60 minutos</td>
+					</tr>
+					<tr class="table-day-three">
+						<td>3 - 8:15</td>
+					</tr>
+					<tr class="table-day-three">
+						<td>3 - 8:30</td>
+					</tr>
+					<tr class="table-day-three">
+						<td>3 - 8:45</td>
+					</tr>
+					<tr class="table-day-four">
+						<td>4 - 8:00</td>
+						<td rowspan="3">1era Presentación del día 4 de 45 minutos</td>
+					</tr>
+					<tr class="table-day-four">
+						<td>4 - 8:15</td>
+					</tr>
+					<tr class="table-day-four">
+						<td>4 - 8:30</td>
+					</tr>
+					<tr class="table-day-five">
+						<td>5 - 8:00</td>
+						<td rowspan="4">1era Presentación del día 5 de 60 minutos</td>
+					</tr>
+					<tr class="table-day-five">
+						<td>5 - 8:15</td>
+					</tr>
+					<tr class="table-day-five">
+						<td>5 - 8:30</td>
+					</tr>
+					<tr class="table-day-five">
+						<td>5 - 8:45</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</article>
+
+	<article class="form-article">
+		<h3 class="subtitle">Altas</h3>
+		<section class="form-section">
+			<h3>Alta de Empresa</h3>
+			<form action="#" method="get" id="idCompany">
+				<div>
+					<label for="companyName" class="form-label">Nombre</label>
+					<input type="text" name="companyName" id="companyName" class="text-box" maxlength="30" required>
+				</div>
+				<div>
+					<label for="companyAddress" class="form-label">Dirección</label>
+					<input type="text" name="companyAddress" id="companyAddress" class="text-box" maxlength="30" required>
+				</div>
+				<div>
+					<label for="companyPhoneNumber" class="form-label">Teléfono</label>
+					<input type="text" name="companyPhoneNumber" id="companyPhoneNumber" class="text-box" maxlength="30" required>
+				</div>
+
+				<div>
+					<p class="origin-label">Origen:</p>
+					<div>
+						<input type="radio" name="origin" id="nationalOrigin" value="nacional" checked>
+						<label for="nationalOrigin">nacional</label>
+					</div> 
+					<div>
+						<input type="radio" name="origin" id="foreignOrigin" value="extranjera">
+						<label for="foreignOrigin">extranjera</label>
+					</div>
+				</div>
+
+				<div>
+					<button type="button" id="addCompanyButton">Agregar</button>
+				</div>
+			</form>
+		</section>
+		
+		<section>
+			<h3 id="presentationSubtitle">Alta de Presentación</h3>
+			<form action="#" method="get" id="idPresentation">
+				<div>
+					<label for="companyCombo" class="form-label">Empresa</label>
+					<select name="companyCombo" id="companyCombo">
+						<option>Sin datos</option>
+					</select>
+				</div>
+				<div>
+					<label for="presentationTitle" class="form-label">Título</label>
+					<input type="text" name="presentationTitle" id="presentationTitle" class="text-box" maxlength="30" required>
+				</div>
+				<div>
+					<label for="presentationDescription" class="form-label">Descripción</label>
+					<input type="text" name="presentationDescription" id="presentationDescription" class="text-box" maxlength="60" required>
+				</div>
+				<div >
+					<label for="presentationTopic" class="form-label">Tema</label>
+					<select name="presentationTopic" id="presentationTopic">
+						<option>Inteligencia Artificial</option>
+						<option>Big Data</option>
+						<option>Mobile</option>
+						<option>Redes</option>
+						<option>Seguridad</option>
+						<option>Hardware</option>
+					</select>
+				</div>
+				<div>
+					<label for="presentationDay" class="form-label">Día</label>
+					<select name="presentationDay" id="presentationDay">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+				</div>
+				<div >
+					<label for="presentationLength" class="form-label">Duración</label>
+					<select name="presentationLength" id="presentationLength">
+						<option>15 minutos</option>
+						<option>30 minutos</option>
+						<option>45 minutos</option>
+						<option>60 minutos</option>
+						<option>120 minutos</option>
+						<option>180 minutos</option>
+					</select>
+				</div>
+				<div>
+					<button type="button" id="addPresentationButton">Agregar</button>
+				</div>
+			</form>
+		</section>
+
+		<h3 class="subtitle">Consultas y Estadísticas</h3>
+		<section>
+			<h3>Presentaciones con ...</h3>
+			<div>
+				<form id="idSearch">
+					<label for="searchBox" class="form-label">Palabras a buscar:</label>
+					<input type="text" name="searchBox" id="searchBox" class="text-box" maxlength="30" required>
+					<input type="checkbox" name="containAll" id="idCheckBox">
+					<label for="idCheckBox" class="checkbox-label">Contiene todas</label>
+					<button type="button" id="searchButton">Consultar</button>
+				</form>
+			</div>
+
+			<ul id="searchList">
+				<li>Sin datos</li>
+			</ul>
+
+			<h3>Empresas Registradas</h3>
+			<ul id="companyList">
+				<li>Sin datos</li>
+			</ul>
+
+			<h3>Duración promedio:</h3>
+			<p id="averageTime">Sin datos</p>
+
+			<h3>Empresas con la máxima cantidad de presentaciones:</h3>
+			<ul id="maxCompanyList">
+				<li>Sin datos</li>
+			</ul>
+
+			<h3>Total por tipo:</h3>
+			<ol id="topicList">
+				<li>Inteligencia Artificial - <span id="topicAI">sin datos</span></li>
+				<li>Big Data - <span id="topicBigData">sin datos</span></li>
+				<li>Mobile - <span id="topicMobile">sin datos</span></li>
+				<li>Redes - <span id="topicSocialMedia">sin datos</span></li>
+				<li>Seguridad - <span id="topicSecurity">sin datos</span></li>
+				<li>Hardware - <span id="topicHardware">sin datos</span></li>
+			</ol>
+		</section>
+	</article>
+
+	<footer>
+		TechnoEvent. El evento tecnológico del año.
+	</footer>
+
+</body>
+</html>
+

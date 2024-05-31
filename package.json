@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run copy-style && npm run buildCss && npm run copy-html && npm run copy-assets && npm run copy-pdf",
+    "build": "npm run copy-style && npm run buildCss && npm run copy-html && npm run copy-assets && npm run copy-pdf && npm run copy-paginas",
     "buildCss": "sass scss/estilos.scss dist/css/estilos.min.css --style compressed",
     "start": "sass --watch scss/estilos.scss dist/css/estilos.min.css",
     "copy-html": "copyfiles \"*.html\" dist",
     "copy-assets": "copyfiles \"assets/*.png\" dist",
     "copy-style": "copyfiles \"scss/*.scss\" dist",
-    "copy-pdf": "copyfiles \"pdf/*.pdf\" dist"
+    "copy-pdf": "copyfiles \"pdf/*.pdf\" dist",
+    "copy-paginas": "copyfiles \"paginas/**/*\" dist"
   },
   "keywords": [],
   "author": "",
