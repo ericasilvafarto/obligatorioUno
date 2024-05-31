@@ -1,27 +1,22 @@
 @include respond-to(small) {
 #sushi, #sinCulpa,#js{
     display: none;
+   
+}
+#Celular {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
-    #Celular {
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-    }
-    #Celular div{
-       max-width: 600px;
-    }
-    #Celular img {
-        
-        width: 100%; 
-        height: auto; 
-        object-fit: contain;
-        margin-bottom: 20px; 
-    }
+#Celular img {
+    display: block;
+    max-width: 100%; 
+    margin-bottom: 2.5em;
 }
 }
 @include respond-to(medium) {
-    #Celular{
-        display: none;
+    #Celular {
+    display: none;
     }
     }
 
