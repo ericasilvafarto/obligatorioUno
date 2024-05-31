@@ -1,22 +1,116 @@
 
-*{
-    background-color: $font-color-default;
+body {
+    font-family: Arial, sans-serif;
+    background-color:$background-color;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color:$background-color;
+    color: white;
+    padding: 10px 0;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.pricing-card {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    color: white;
+}
+
+.pricing-card h3 {
+    background-color: $paquetes;
+    color: white;
+    padding: 15px 0;
+    margin: -20px -20px 20px -20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-card ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #555;
+}
+
+.pricing-card ul li:last-child {
+    border-bottom: none;
+}
+
+.pricing-card .price {
+    font-size: 24px;
+    color: $paquetes;
+    margin: 20px 0;
+}
+
+.pricing-card button {
+    background-color: $highlight-proyect;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.pricing-card button:hover {
+    background-color:$background-color;
 }
 
 form {
     max-width: 500px;
     margin: 0 auto;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 20px;
-    border: 1px solid $color-claro;
+    border: 1px solid #555;
     border-radius: 5px;
     box-sizing: border-box;
+    background-color: #444;
+    color: white;
 }
 
 textarea {
@@ -24,21 +118,24 @@ textarea {
 }
 
 button[type="submit"] {
-    background-color: $hover-border-color;
+    background-color: $link-color;
     color: white;
-    padding: 12px 20px;
+    padding: 15px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
-    background-color: $hover-border-color;
+    background-color:$highlight-proyect;
 }
 
 label {
     font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .checkbox-container {
@@ -50,24 +147,35 @@ label {
     width: auto;
     margin-right: 10px;
 }
-
 footer {
-    background-color: $hover-border-color;
-    color: $background-color; 
-    text-align: center; 
-    padding: 20px; 
-  }
+    background-color:$hover-border-color; 
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
 
 
-@media screen and (max-width: 600px) {
+@include respond-to(small) {
+    .pricing-table {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
     form {
         padding: 20px;
     }
+
     input[type="text"],
     input[type="email"],
     textarea {
         margin-bottom: 10px;
     }
+
     button[type="submit"] {
         font-size: 14px;
     }
